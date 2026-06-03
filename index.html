@@ -3,19 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
-    </head>
+    <title>Meu Projeto Agrinho</title>
+    <style>
+        /* Estilos Gerais da Página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f4; /* Fundo verde bem clarinho */
+            color: #2e4a3c; /* Texto em tom verde escuro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Topo do Site */
+        header {
+            background-color: #2c7a4b; /* Verde bandeira/agro */
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 6px solid #8cb83e; /* Detalhe em verde folha */
+        }
+
+        /* Estilização dos Parágrafos (Estilo Cartão) */
+        .card-conteudo {
+            background-color: #fafdfa;
+            border-left: 5px solid #2c7a4b;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .destaque {
+            color: #d35400; /* Toque cor de terra/laranja para destacar */
+            font-weight: bold;
+        }
+
+        /* Rodapé do Site */
+        footer {
+            margin-top: auto;
+            background-color: #1e3327;
+            color: #a3c4b2;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
 
-<h1>Meu Primeiro Site</h1>
+    <header>
+        <h1>Meu Primeiro Site do Agrinho</h1>
+    </header>
 
-  
-<p>Este é o corpo principal do site, onde o conteúdo visível interativo fica.</p>
- <p> Este é o cporp</p>
-  
-<p> PARAGRAFO FINAL</p>
- 
-  
+    <main>
+        
+        <div class="card-conteudo">
+            <p>Este é o corpo principal do site, onde o conteúdo visível interativo fica. Aqui podemos falar sobre <span class="destaque">sustentabilidade, meio ambiente e cidadania</span>!</p>
+        </div>
+
+        <div class="card-conteudo">
+            <p>Este é o corpo... e o coração do nosso projeto focado no ecossistema e na inovação no campo.</p>
+        </div>
+        
+        <div class="card-conteudo" style="border-left-color: #d35400;">
+            <p><strong>PARÁGRAFO FINAL:</strong> Cultivando o saber para transformar o mundo!</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Escolar Agrinho</p>
+    </footer>
 
 </body>
 </html>
