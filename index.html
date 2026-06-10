@@ -1,410 +1,211 @@
-/ Importa as fontes do Google Fonts (já configurado no HTML, mas útil para referência) /
-/ Poppins para títulos e Montserrat para textos /
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
 
-/ --- Estilos Gerais --- / {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Agrinho 2026: Agro Forte, Futuro Sustentável</title>
+ <!-- Link para o arquivo CSS de estilo do seu site -->
+ <link rel="stylesheet" href="style.css">
+ <!-- Opcional: Link para fontes do Google Fonts para deixar o site mais bonito -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
- font-family: 'Montserrat', sans-serif;
- line-height: 1.6;
- color: #333;
- background-color: #f8f8f8;
-}
+ <header>
+ <div class="container">
+ <h1 class="logo">Agrinho 2026</h1>
+ <nav>
+ <ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#agro-forte">Agro Forte</a></li>
+ <li><a href="#futuro-sustentavel">Futuro Sustentável</a></li>
+ <li><a href="#equilibrio-na-pratica">Equilíbrio</a></li>
+ <li><a href="#galeria">Galeria</a></li>
+ <li><a href="#jogos">Jogos</a></li>
+ <li><a href="#sobre">Sobre</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
 
-.container {
- max-width: 1200px;
- margin: 0 auto;
- padding: 0 20px;
-}
+ <main>
+ <section id="home" class="hero">
+ <div class="container">
+ <h2>Agro Forte, Futuro Sustentável: Equilibramos para Colher!</h2>
+ <p>Descubra como a produção e o meio ambiente caminham juntos para um mundo melhor.</p>
+ <div class="hero-buttons">
+ <a href="#agro-forte" class="btn primary">Explore o Agro Forte!</a>
+ <a href="#futuro-sustentavel" class="btn secondary">Descubra o Futuro Sustentável!</a>
+ </div>
+ <!-- Imagem principal de capa. Crie uma pasta 'imagens' e coloque sua foto lá. -->
+ <img src="imagens/home-banner.jpg" alt="Crianças no campo, tecnologia e natureza em harmonia">
+ </div>
+ </section>
 
-h1, h2, h3, h4 {
- font-family: 'Poppins', sans-serif;
- color: #2c3e50;
- margin-bottom: 15px;
-}
+ <section id="agro-forte" class="content-section">
+ <div class="container">
+ <h3>O Mundo do Agro Forte</h3>
+ <p>Aqui você vai aprender sobre a importância da agricultura e pecuária, e como a tecnologia ajuda a produzir alimentos de forma eficiente.</p>
+ <div class="cards-container">
+ <div class="card">
+ <img src="imagens/alimentos.jpg" alt="Alimentos variados">
+ <h4>De Onde Vêm Nossos Alimentos?</h4>
+ <p>Uma viagem desde a semente até a sua mesa!</p>
+ </div>
+ <div class="card">
+ <img src="imagens/tecnologia.jpg" alt="Trator tecnológico">
+ <h4>Tecnologia no Campo</h4>
+ <p>Drones, sensores e máquinas inteligentes: o futuro já chegou!</p>
+ </div>
+ <div class="card">
+ <img src="imagens/agricultor.jpg" alt="Agricultor feliz">
+ <h4>O Herói do Campo</h4>
+ <p>Conheça quem trabalha duro para colocar comida na nossa mesa.</p>
+ </div>
+ </div>
+ <!-- Exemplo de interatividade (requer JavaScript para funcionar de verdade) -->
+ <h4>Quiz Rápido: Você sabe de onde vem o pãozinho?</h4>
+ <button class="btn quiz-btn" onclick="alert('Funcionalidade de Quiz será adicionada com JavaScript!')">Começar Quiz</button>
+ </div>
+ </section>
 
-h1 { font-size: 2.8em; }
-h2 { font-size: 2.2em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.4em; }
+ <section id="futuro-sustentavel" class="content-section light-bg">
+ <div class="container">
+ <h3>Construindo o Futuro Sustentável</h3>
+ <p>Vamos proteger nosso planeta! Entenda como cuidar da natureza e usar os recursos de forma inteligente.</p>
+ <div class="cards-container">
+ <div class="card">
+ <img src="imagens/agua.jpg" alt="Água limpa">
+ <h4>Água e Solo: Nossos Tesouros</h4>
+ <p>Descubra como manter a água limpa e o solo fértil.</p>
+ </div>
+ <div class="card">
+ <img src="imagens/floresta.jpg" alt="Floresta biodiversa">
+ <h4>A Biodiversidade Importa!</h4>
+ <p>Por que precisamos proteger as plantas e os animais?</p>
+ </div>
+ <div class="card">
+ <img src="imagens/reciclagem.jpg" alt="Lixeiras de reciclagem">
+ <h4>Reciclar é Salvar!</h4>
+ <p>Dicas simples para reduzir, reutilizar e reciclar no dia a dia.</p>
+ </div>
+ </div>
+ <!-- Exemplo de interatividade básica (melhor com JavaScript) -->
+ <h4>Passeio na Natureza Interativo</h4>
+ <p>Clique nos elementos da imagem para aprender mais!</p>
+ <div class="interactive-map">
+ <!-- Imagem que será interativa. Você pode desenhar um mapa simples da natureza. -->
+ <img src="imagens/mapa-natureza.png" alt="Mapa interativo da natureza" usemap="#naturemap">
+ <map name="naturemap">
+ <!-- Exemplo de área clicável: um círculo na coordenada 100,100 com raio 50px -->
+ <area shape="circle" coords="100,100,50" href="#" alt="Árvore" onclick="alert('Árvores produzem oxigênio e abrigam animais! Proteja-as!');">
+ <!-- Exemplo de área clicável: um retângulo nas coordenadas 200,150 até 300,200 -->
+ <area shape="rect" coords="200,150,300,200" href="#" alt="Rio" onclick="alert('Rios são fontes de vida! Não jogue lixo neles!');">
+ <!-- Adicione mais áreas conforme o seu mapa para tornar mais interativo -->
+ </map>
+ </div>
+ </div>
+ </section>
 
-p {
- margin-bottom: 15px;
-}
+ <section id="equilibrio-na-pratica" class="content-section">
+ <div class="container">
+ <h3>Equilíbrio na Prática: Juntos somos mais fortes!</h3>
+ <p>Veja como é possível produzir muito e, ao mesmo tempo, cuidar do nosso planeta.</p>
+ <div class="feature-list">
+ <div class="feature-item">
+ <img src="imagens/exemplo-fazenda.jpg" alt="Fazenda sustentável">
+ <h4>Fazendas do Futuro</h4>
+ <p>Conheça projetos incríveis que já usam práticas sustentáveis.</p>
+ </div>
+ <div class="feature-item">
+ <img src="imagens/criancas-plantando.jpg" alt="Crianças plantando">
+ <h4>Sua Ação Faz a Diferença!</h4>
+ <p>Pequenas atitudes no dia a dia geram grandes resultados para o meio ambiente.</p>
+ </div>
+ </div>
+ <!-- Exemplo de interatividade (requer JavaScript) -->
+ <h4>Qual a sua ação sustentável favorita?</h4>
+ <select name="acao-sustentavel" id="acao-sustentavel">
+ <option value="">Escolha uma opção</option>
+ <option value="economizar-agua">Economizar água</option>
+ <option value="plantar-arvore">Plantar uma árvore</option>
+ <option value="separar-lixo">Separar o lixo</option>
+ </select>
+ <button class="btn primary" onclick="alert('Esta funcionalidade pode ser melhorada com JavaScript para mostrar o impacto!')">Ver impacto</button>
+ </div>
+ </section>
 
-ul {
- list-style: none;
- padding: 0;
-}
+ <section id="galeria" class="content-section light-bg">
+ <div class="container">
+ <h3>Nossa Galeria de Imagens e Vídeos</h3>
+ <p>Inspire-se com fotos e vídeos do Agro Forte e do Futuro Sustentável!</p>
+ <div class="gallery-grid">
+ <img src="imagens/galeria1.jpg" alt="Foto de um projeto Agrinho">
+ <img src="imagens/galeria2.jpg" alt="Foto de um campo verde">
+ <img src="imagens/galeria3.jpg" alt="Foto de animais da fazenda">
+ <img src="imagens/galeria4.jpg" alt="Foto de criança regando planta">
+ <!-- Adicionar mais imagens aqui -->
+ </div>
+ <!-- Exemplo de vídeo incorporado do YouTube -->
+ <h4>Assista ao vídeo do Agrinho:</h4>
+ <div class="video-container">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/SUA_ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ </div>
+ </section>
 
-a {
- text-decoration: none;
- color: #3498db;
- transition: color 0.3s ease;
-}
+ <section id="jogos" class="content-section">
+ <div class="container">
+ <h3>Jogos e Desafios Divertidos!</h3>
+ <p>Aprender brincando é muito mais legal. Jogue e teste seus conhecimentos!</p>
+ <div class="games-grid">
+ <div class="game-card">
+ <img src="imagens/game-quiz.png" alt="Ícone de quiz">
+ <h4>Quiz do Conhecimento</h4>
+ <p>Teste o que você aprendeu!</p>
+ <a href="#" class="btn primary" onclick="alert('O jogo de Quiz será implementado com JavaScript!')">Jogar!</a>
+ </div>
+ <div class="game-card">
+ <img src="imagens/game-memoria.png" alt="Ícone de jogo da memória">
+ <h4>Jogo da Memória Sustentável</h4>
+ <p>Encontre os pares e treine sua memória.</p>
+ <a href="#" class="btn primary" onclick="alert('O jogo da Memória será implementado com JavaScript!')">Jogar!</a>
+ </div>
+ <div class="game-card">
+ <img src="imagens/game-fazenda.png" alt="Ícone de fazenda">
+ <h4>Fazenda dos Sonhos</h4>
+ <p>Construa sua própria fazenda sustentável.</p>
+ <a href="#" class="btn primary" onclick="alert('O jogo da Fazenda dos Sonhos será implementado com JavaScript!')">Jogar!</a>
+ </div>
+ </div>
+ </div>
+ </section>
 
-a:hover {
- color: #2980b9;
-}
+ <section id="sobre" class="content-section light-bg">
+ <div class="container">
+ <h3>Sobre o Agrinho</h3>
+ <p>Conheça mais sobre o programa que transforma o futuro do campo e das novas gerações.</p>
+ <ul>
+ <li><strong>Nossa Missão:</strong> Incentivar a consciência ambiental e a valorização do meio rural.</li>
+ <li><strong>História:</strong> Uma jornada de aprendizado e transformação.</li>
+ <li><strong>Como Participar:</strong> Informações para escolas, professores e alunos.</li>
+ </ul>
+ <p>Visite o site oficial do Agrinho para mais detalhes: <a href="https://www.agrinho.com.br" target="_blank">www.agrinho.com.br</a></p>
+ </div>
+ </section>
+ </main>
 
-/ --- Botões --- /
-.btn {
- display: inline-block;
- padding: 12px 25px;
- border-radius: 5px;
- font-weight: 700;
- transition: background-color 0.3s ease, transform 0.3s ease;
- margin: 10px 5px 10px 0;
- font-family: 'Poppins', sans-serif;
-}
+ <footer>
+ <div class="container">
+ <p>&copy; 2026 Agrinho. Todos os direitos reservados. Tema: Agro Forte, Futuro Sustentável.</p>
+ <p>Desenvolvido para o Agrinho 2026.</p>
+ </div>
+ </footer>
 
-.btn.primary {
- background-color: #27ae60; / Verde Agrinho /
- color: white;
-}
-
-.btn.primary:hover {
- background-color: #229954;
- transform: translateY(-2px);
-}
-
-.btn.secondary {
- background-color: #3498db; / Azul /
- color: white;
-}
-
-.btn.secondary:hover {
- background-color: #2980b9;
- transform: translateY(-2px);
-}
-
-/ --- Cabeçalho (Header) --- /
-header {
- background-color: #ffffff;
- padding: 20px 0;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- position: sticky;
- top: 0;
- z-index: 1000;
-}
-
-header .container {
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-
-.logo {
- color: #27ae60;
- font-size: 2.5em;
- font-weight: 700;
-}
-
-nav ul {
- display: flex;
-}
-
-nav li {
- margin-left: 30px;
-}
-
-nav a {
- color: #333;
- font-weight: 600;
- font-size: 1.1em;
- padding-bottom: 5px;
- position: relative;
-}
-
-nav a::after {
- content: '';
- position: absolute;
- width: 0;
- height: 3px;
- background-color: #27ae60;
- left: 0;
- bottom: -5px;
- transition: width 0.3s ease;
-}
-
-nav a:hover::after,
-nav a.active::after {
- width: 100%;
-}
-
-/ --- Seção Hero (Home) --- /
-.hero {
- background: linear-gradient(to right, rgba(236, 240, 241, 0.9), rgba(255, 255, 255, 0.9)), url('imagens/background-hero.jpg') no-repeat center center/cover;
- / Use uma imagem de fundo genérica ou crie uma específica /
- padding: 80px 0;
- text-align: center;
- color: #2c3e50;
-}
-
-.hero h2 {
- font-size: 3.5em;
- margin-bottom: 20px;
- line-height: 1.2;
-}
-
-.hero p {
- font-size: 1.3em;
- max-width: 800px;
- margin: 0 auto 30px auto;
-}
-
-.hero-buttons {
- margin-top: 30px;
- margin-bottom: 40px;
-}
-
-.hero img {
- max-width: 100%;
- height: auto;
- border-radius: 10px;
- box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
- margin-top: 40px;
-}
-
-/ --- Seções de Conteúdo --- /
-.content-section {
- padding: 60px 0;
- text-align: center;
-}
-
-.content-section.light-bg {
- background-color: #ecf0f1;
-}
-
-.content-section h3 {
- font-size: 2.5em;
- margin-bottom: 30px;
- position: relative;
- display: inline-block;
-}
-
-.content-section h3::after {
- content: '';
- position: absolute;
- width: 70%;
- height: 4px;
- background-color: #27ae60;
- left: 15%;
- bottom: -10px;
- border-radius: 2px;
-}
-
-/ --- Cards (Agro Forte, Futuro Sustentável) --- /
-.cards-container,
-.feature-list,
-.games-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 30px;
- margin-top: 40px;
-}
-
-.card, .feature-item, .game-card {
- background-color: #ffffff;
- padding: 30px;
- border-radius: 10px;
- box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
- text-align: center;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover, .feature-item:hover, .game-card:hover {
- transform: translateY(-10px);
- box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card img, .feature-item img, .game-card img {
- max-width: 100%;
- height: 200px;
- object-fit: cover;
- border-radius: 8px;
- margin-bottom: 20px;
-}
-
-.card h4, .feature-item h4, .game-card h4 {
- font-size: 1.6em;
- margin-bottom: 10px;
- color: #27ae60;
-}
-
-/ --- Quiz e Elementos Interativos --- /
-.quiz-btn, #acao-sustentavel {
- margin-top: 20px;
-}
-
-#acao-sustentavel {
- padding: 10px 15px;
- border: 1px solid #ccc;
- border-radius: 5px;
- font-size: 1em;
- margin-right: 10px;
-}
-
-/ --- Mapa Interativo --- /
-.interactive-map {
- position: relative;
- max-width: 800px;
- margin: 40px auto;
-}
-
-.interactive-map img {
- max-width: 100%;
- height: auto;
- display: block; / Remove espaço extra abaixo da imagem /
- border-radius: 10px;
- box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/ Estilos para as áreas clicáveis do mapa (visíveis apenas no HTML via 'onclick') /
-/ A estilização dessas áreas é complexa apenas com CSS, geralmente feito com JS ou SVGs /
-
-/ --- Galeria --- /
-.gallery-grid {
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- margin-top: 40px;
-}
-
-.gallery-grid img {
- width: 100%;
- height: 200px;
- object-fit: cover;
- border-radius: 8px;
- box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
- transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
- transform: scale(1.05);
-}
-
-.video-container {
- position: relative;
- width: 100%;
- padding-bottom: 56.25%; / Proporção 16:9 /
- height: 0;
- overflow: hidden;
- margin-top: 40px;
- border-radius: 10px;
- box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.video-container iframe {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- border: none;
- border-radius: 10px;
-}
-
-/ --- Sobre o Agrinho --- /
-#sobre ul {
- margin-top: 20px;
- text-align: left;
- display: inline-block; / Para centralizar a lista como um bloco /
-}
-
-#sobre li {
- margin-bottom: 10px;
- font-size: 1.1em;
-}
-
-#sobre li strong {
- color: #27ae60;
-}
-
-/ --- Rodapé (Footer) --- /
-footer {
- background-color: #2c3e50;
- color: white;
- padding: 30px 0;
- text-align: center;
- font-size: 0.9em;
-}
-
-footer p {
- margin: 5px 0;
-}
-
-/ --- Responsividade --- /
-@media (max-width: 992px) {
- .hero h2 {
- font-size: 2.8em;
- }
- .content-section h3 {
- font-size: 2em;
- }
- nav li {
- margin-left: 20px;
- }
-}
-
-@media (max-width: 768px) {
- header .container {
- flex-direction: column;
- text-align: center;
- }
- nav {
- margin-top: 15px;
- }
- nav ul {
- flex-wrap: wrap;
- justify-content: center;
- }
- nav li {
- margin: 5px 15px;
- }
- .hero {
- padding: 60px 0;
- }
- .hero h2 {
- font-size: 2.2em;
- }
- .hero p {
- font-size: 1.1em;
- }
- .btn {
- padding: 10px 20px;
- margin: 5px;
- }
- .cards-container, .feature-list, .games-grid {
- grid-template-columns: 1fr; / Uma coluna em telas menores /
- }
- .gallery-grid {
- grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
- }
-}
-
-@media (max-width: 480px) {
- .logo {
- font-size: 2em;
- }
- nav a {
- font-size: 0.9em;
- }
- .hero h2 {
- font-size: 1.8em;
- }
- .hero p {
- font-size: 1em;
- }
- .content-section {
- padding: 40px 0;
- }
- .content-section h3 {
- font-size: 1.6em;
- }
- .card, .feature-item, .game-card {
- padding: 20px;
- }
-}
+ <!-- Link para o arquivo JavaScript, onde você adicionaria a interatividade. -->
+ <!-- Mantenha-o antes do fechamento da tag </body> para garantir que todo o HTML esteja carregado. -->
+ <script src="script.js"></script>
+</body>
+</html>
